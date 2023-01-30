@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./icons/fonts-style.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>SmileSchool - Get Schooled</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm bg-transparent">
+                <button class="navbar-toggler mt-3" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="holberton_school-icon-menu text-white"></span>
+                </button>
+                <a class="navbar-brand d-sm-none mx-auto text-center" href="homepage.html">
+                    <img class="my-3 ml-n5" src="images/smile_off.png" width="30" height="23" alt="Smile"
+                        loading="lazy">
+                    <div class="w-100"></div>
+                    <img class="mb-3 ml-n5" src="images/logo.png" width="115" height="30" alt="Logo" loading="lazy">
+                </a>
+                <a class="navbar-brand d-none d-sm-block" href="homepage.html">
+                    <img class="m-3" src="images/smile_off.png" width="37" height="30" alt="Smile" loading="lazy">
+                    <img src="images/logo.png" width="115" height="30" alt="Logo" loading="lazy">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-sm-none">
+                        <div class="d-sm-none mx-auto mt-3">
+                            <a class="nav-link purple-text text-uppercase text-center underline ul-courses"
+                                href="#">Courses</a>
+                            <a class="nav-link text-white text-uppercase text-center" href="pricing.html">Pricing</a>
+                            <a class="nav-link text-white text-uppercase text-center" href="#login">Login</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block ml-auto">
+                        <div class="navbar-nav">
+                            <a class="nav-link purple-text text-uppercase underline ul-courses" href="#">Courses</a>
+                            <a class="nav-link text-white text-uppercase" href="pricing.html">Pricing</a>
+                            <a class="nav-link text-white text-uppercase" href="#login">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Hero section -->
+        <section class="d-none d-sm-block">
+            <div class="container text-center text-white text-light font-weight-light py-5">
+                <h1 class="coiny font-32">« Don’t cry because it’s over.<br>
+                    <span class="purple-text">Smile</span> because it happened. »
+                </h1>
+            </div>
+        </section>
+    </header>
+
+    <!-- Search Filters -->
+
+    <div class="bg-purple search text-white font-22 py-5">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-4 mb-3">
+                    <span class="text-uppercase font-weight-bold font-12">keywords</span>
+
+                    <div class="input-group border-bottom">
+                        <div class="input-group-addon mr-0">
+                            <span class="input-group-text holberton_school-icon-search_1 text-white"></span>
+                        </div>
+                        <input type="text" class="form-control search-text-area" aria-label="Default"
+                            placeholder="Search by keywords" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 box2">
+                    <span class="text-white font-weight-bold font-size-small">TOPIC</span>
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle text-left py-2" href="#" role="button" id="topicdropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Novice</span>
+                        </a>
+
+                        <div class="dropdown-menu mt-0" aria-labelledby="topicdropdown">
+                            <a class="dropdown-item" href="#">Novice</a>
+                            <a class="dropdown-item" href="#">Intermediate</a>
+                            <a class="dropdown-item" href="#">Expert</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 box3">
+                    <span class="text-white font-weight-bold font-size-small">SORT BY</span>
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle text-left py-2" href="#" role="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Most Popular</span>
+                        </a>
+
+                        <div class="dropdown-menu mt-0" aria-labelledby="sortbydropdown">
+                            <a class="dropdown-item" href="#">Most Popular</a>
+                            <a class="dropdown-item" href="#">Most Recent</a>
+                            <a class="dropdown-item" href="#">Most Viewed</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="bg-black text-white text-center py-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col text-md-left">
+                    <a href="#">
+                        <img src="images/smile_off.png" alt="navbar-logo" width="37" height="30" alt="Smile"
+                            loading="lazy" />
+                        <img src="images/logo.png" width="120" height="30" alt="Logo" loading="lazy" />
+                    </a>
+                </div>
+                <div class="col text-md-right m-3">
+                    <a href="https://www.facebook.com/HolbertonTUN/" class="holberton_school-icon-ic_facebook px-2"></a>
+                    <a href="https://www.twitter.com/HolbertonTUN/" class="holberton_school-icon-ic_twitter px-2"></a>
+                    <a href="https://www.instagram.com/HolbertonTUN/"
+                        class="holberton_school-icon-ic_instagram px-2"></a>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <div class="text-muted trademark">
+                    <span>©smileschool 2020</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
